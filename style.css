@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    gap: 40px;
+}
+
+.insta__form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    max-width: 400px;
+    width: 300px;
+    background-color: #ECF3FF;
+    border: 0;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    outline: none;
+    color: #666;
+}
+
+
+
+.or {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.or::before {
+    content: '';
+    position: absolute;
+    background-color: #666;
+    height: 1px;
+    bottom: 7px;
+    left: 20px;
+    width: 100px;
+}
+
+.or::after {
+    content: '';
+    position: absolute;
+    background-color: #666;
+    height: 1px;
+    bottom: 7px;
+    right: 20px;
+    width: 100px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #385185;
+    cursor: pointer;
+}
+
+h3 i {
+    font-size: 22px;
+}
+
+.forget{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #385185;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width:764px) {
+    .image__login{
+        display: none;
+    }
+}
+
+
+/* #btn {
+    max-width: 400px;
+    width: 300px;
+    background-color: #e5353e;
+    border: 0;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    animation: ice-cream-animation 2s infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes ice-cream-animation {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    25% {
+      transform: translate(-10px, -10px) rotate(10deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(0);
+    }
+    75% {
+      transform: translate(10px, -10px) rotate(-10deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0);
+    }
+  }
+   */
+
+
+  #btn:hover {
+    transform: translate(-10px, -10px);/* Adjust the distance and direction here */
+  }
+  
+
+  #btn {
+    /* Existing styles */
+
+    align-items: center;
+    max-width: 100px;
+    width: 80px;
+    background-color: #e5353e;
+    border: 0;
+    padding: 4px 8px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease-out;
+  
+    position: relative;
+    overflow: hidden;
+    transition: width 0.3s ease-out;
+  }
+  
+  .button-expanded {
+    width: 150px; /* Adjust the expanded width here */
+  }
+  
+  .overlay {
+    /* Existing styles */
+  
+    display: none;
+  }
+  
+  .button-expanded .overlay {
+    display: inline-block;
+    font-size: 14px; /* Adjust the font size for the expanded button */
+  }
+  
+  
